@@ -7,7 +7,7 @@ import { useState } from 'react';
 
 function Item({id,images,title,description,price,rating,stock}) {
 
-  const [count,setCount]=useState(+(localStorage.count));
+  const [count,setCount]=useState(+(localStorage.count)|| 0);
 
   const handlePlus=()=>{
     count !==stock ? 
